@@ -1,4 +1,4 @@
-package ftblag.lagbgonreborn;
+package ftblag.lagbgonrevived;
 
 import net.minecraft.command.ICommandSender;
 import net.minecraft.util.text.TextComponentString;
@@ -8,18 +8,18 @@ import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 
-@Mod(modid = LagBGonReborn.MODID, name = "Lag'B'Gon Reborn", version = LagBGonReborn.VERSION, serverSideOnly = true, acceptableRemoteVersions = "*")
-public class LagBGonReborn {
-    public static final String MODID = "lagbgonreborn";
-    public static final String VERSION = "@VERSION@";
+@Mod(modid = LagBGonRevived.MODID, name = "Lag'B'Gon Revived", version = LagBGonRevived.VERSION, acceptableRemoteVersions = "*")
+public class LagBGonRevived {
+    public static final String MODID = "lagbgonrevived";
+    public static final String VERSION = "1.1.0";
 
     @Mod.Instance(MODID)
-    public static LagBGonReborn instance;
+    public static LagBGonRevived instance;
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-        LBGConfig.ins().init(new Configuration(event.getSuggestedConfigurationFile()));
-        LBGConfig.ins().load();
+        LBGConfig.init(new Configuration(event.getSuggestedConfigurationFile()));
+        LBGConfig.load();
     }
 
     @EventHandler

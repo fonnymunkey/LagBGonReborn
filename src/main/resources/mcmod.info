@@ -1,16 +1,15 @@
 [
 {
-  "modid": "lagbgonreborn",
-  "name": "Lag'B'Gon Reborn",
-  "description": "Lag reduction utility for Forge, inspired by ClearLagg for Bukkit.",
+  "modid": "${mod_id}",
+  "name": "${mod_name}",
+  "description": "${mod_description}",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "",
+  "url": "https://www.curseforge.com/members/fonnymunkey/projects",
   "updateUrl": "",
-  "authorList": ["FTB_lag"],
-  "credits": "ZenDarva for original mod version.",
+  "authorList": ${mod_author},
+  "credits": "${mod_credits}",
   "logoFile": "",
-  "screenshots": [],
   "dependencies": []
 }
 ]
